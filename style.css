@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(209, 23%, 22%);
+  align-items: center;
+  padding: 1.5rem 8rem;
+  font-size: 14px;
+  box-shadow: 1px hsl(200, 15%, 8%);
+}
+.main {
+  background-color: hsl(207, 26%, 17%);
+  padding: 1.5rem 8rem;
+}
+.mode {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.mode img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-filter img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background-color: hsl(209, 23%, 22%);
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+input {
+  outline: none;
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  width: 20rem;
+  padding-left: 1rem;
+}
+::placeholder {
+  color: white;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: 600;
+}
+.filter-header {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  gap: 2rem;
+  padding: 0.7rem 1rem;
+  background-color: hsl(209, 23%, 22%);
+  align-items: center;
+}
+.filter-header img {
+  transform: rotate(180deg);
+}
+.filter-properties {
+  position: absolute;
+  overflow: hidden;
+  top: 2rem;
+  border-radius: 5px;
+  background-color: hsl(209, 23%, 22%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 14px;
+  opacity: 0;
+  max-height: 0rem;
+  padding: 0rem 1rem;
+}
+.filter-properties p {
+  cursor: pointer;
+}
+.properties-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.none img {
+  display: none;
+}
+.open img {
+  transform: rotate(0deg);
+}
+.open .filter-properties {
+  padding: 0.7rem 1rem;
+  opacity: 1;
+  max-height: 10rem;
+  top: 3.2rem;
+}
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.9rem;
+  margin-top: 2rem;
+}
+.country {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+}
+.country img {
+  width: 16rem;
+  height: 10rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.country-properties {
+  width: 256px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(209, 23%, 22%);
+  font-size: 14px;
+  gap: 0.1rem;
+  padding: 1rem;
+}
+.country-properties p {
+  margin-bottom: 0.5rem;
+}
+.properties-teg {
+  font-weight: 600;
+}
+.light * {
+  color: hsl(200, 15%, 8%);
+}
+.light .navbar {
+  background-color: hsl(0, 0%, 98%);
+}
+.light .main {
+  background-color: hsl(0, 0%, 98%);
+}
+.light .search {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+}
+.light ::placeholder {
+  color: hsl(0, 0%, 52%);
+}
+.light input {
+  background-color: hsl(0, 0%, 100%);
+}
+.light .filter-header {
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+  background-color: hsl(0, 0%, 100%);
+}
+.light .filter-properties {
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+  background-color: hsl(0, 0%, 100%);
+}
+.light .country-properties {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+}
+.light .country {
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+}
+.hidden {
+  display: none;
+}
