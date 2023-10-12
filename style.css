@@ -9,6 +9,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .navbar {
   display: flex;
@@ -17,7 +18,8 @@
   align-items: center;
   padding: 1.5rem 8rem;
   font-size: 14px;
-  box-shadow: 1px hsl(200, 15%, 8%);
+  box-shadow: inset 0.5px -0.5px 3px 0.5px hsl(200, 15%, 8%),
+    0.5px -0.5px 3px 0.5px hsl(200, 15%, 8%);
 }
 .main {
   background-color: hsl(207, 26%, 17%);
@@ -101,14 +103,6 @@ input {
 .filter-properties p {
   cursor: pointer;
 }
-.properties-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.none img {
-  display: none;
-}
 .open img {
   transform: rotate(0deg);
 }
@@ -128,6 +122,7 @@ input {
   display: flex;
   width: max-content;
   flex-direction: column;
+  cursor: pointer;
 }
 .country img {
   width: 16rem;
@@ -149,16 +144,107 @@ input {
 .country-properties p {
   margin-bottom: 0.5rem;
 }
+.detail {
+  background-color: hsl(207, 26%, 17%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 8rem;
+  height: 100vh;
+}
+button {
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px -1px 2px 2px hsl(200, 15%, 8%);
+}
+button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.country-detail {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+.country-detail img {
+  width: 35rem;
+  height: 20rem;
+}
+.details-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.parts-details {
+  display: flex;
+  gap: 7rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.details span {
+  color: hsl(0, 0%, 78%);
+}
 .properties-teg {
   font-weight: 600;
+  color: white !important;
+}
+.others {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.other-country {
+  display: flex;
+  gap: 0.5rem;
+
+  background-color: hsl(209, 23%, 22%);
+  padding: 0.2rem 2rem;
+}
+.other-country span {
+  color: hsl(0, 0%, 78%);
 }
 .light * {
   color: hsl(200, 15%, 8%);
 }
+.light button {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+}
+.light .other-country {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
+}
+.light .other-country span {
+  color: rgb(17, 21, 23);
+}
+.light .details span {
+  color: unset;
+}
+.light .properties-teg {
+  color: unset !important;
+}
 .light .navbar {
+  box-shadow: inset 2px 0px 1px 0px hsl(0, 0%, 52%),
+    0.5px -0.5px 3px 0.5px hsl(0, 0%, 52%);
   background-color: hsl(0, 0%, 98%);
 }
 .light .main {
+  background-color: hsl(0, 0%, 98%);
+}
+.light .detail {
   background-color: hsl(0, 0%, 98%);
 }
 .light .search {
