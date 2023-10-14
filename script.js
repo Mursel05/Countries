@@ -84,6 +84,7 @@ for (let i = 0; i < regions.length; i++) {
     }
   });
 }
+
 countries.addEventListener("click", function (event) {
   const clickedCountry = event.target.closest(".country");
   if (clickedCountry) {
@@ -94,6 +95,7 @@ countries.addEventListener("click", function (event) {
     const borders = item.borders.map((border) =>
       data.find((item) => item.alpha3Code === border)
     );
+    countryDetail.innerHTML = ``;
     countryDetail.innerHTML = `<img src='${item.flag}' alt="flag" />
         <div class="details-name">
           <h2>${item.name}</h2>
@@ -144,7 +146,7 @@ countries.addEventListener("click", function (event) {
             ${borders
               .map(
                 (item) =>
-                  `<div class="other-country"><span>${item.name}</span></div>`
+                  `<div  class="other-country"><span>${item.name}</span></div>`
               )
               .join("")}
           </div>
@@ -156,3 +158,4 @@ back.addEventListener("click", function () {
   main.classList.remove("hidden");
   detail.classList.add("hidden");
 });
+

@@ -272,6 +272,18 @@ button img {
 .light .country {
   box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
 }
+@media (max-width: 375px) {
+  .countries {
+    display: flex;
+    flex-direction: column;
+  }
+  .main,.navbar {
+    padding: 1.5rem 1rem;
+  }
+  h1 {
+    font-size: 15px;
+  }
+}
 .hidden {
   display: none;
 }
