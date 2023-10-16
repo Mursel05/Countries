@@ -272,16 +272,54 @@ button img {
 .light .country {
   box-shadow: 2px 1px 5px -1px hsl(0, 4%, 73%);
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .countries {
     display: flex;
     flex-direction: column;
   }
-  .main,.navbar {
+  .main,
+  .navbar {
     padding: 1.5rem 1rem;
   }
   h1 {
     font-size: 15px;
+  }
+  input {
+    width: 17rem;
+  }
+  .search-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: baseline;
+  }
+  .detail {
+    padding: 3rem 1.5rem;
+    gap: 5rem;
+    height: max-content;
+  }
+  .countries {
+    align-items: center;
+  }
+  .country-detail {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .country-detail img {
+    width: 20.5rem;
+    height: 15rem;
+  }
+  .parts-details {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .others {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    align-items: baseline;
+  }
+  .others .properties-teg {
+    flex-basis: 100%;
   }
 }
 .hidden {
