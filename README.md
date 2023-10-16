@@ -14,7 +14,7 @@ To enable light mode, simply click on the moon icon in the top right corner of t
 ## Responsive Design
 The website is designed to work seamlessly on phone devices. It adjusts its layout and content to provide the best user experience no matter how you access it.
 
-![countries-umber-beta vercel app_](https://github.com/Mursel05/Countries/assets/134983247/7d995354-1209-4f81-b2a5-60c0fa3f92b1)
+![countries-umber-beta vercel app_](https://github.com/Mursel05/Countries/assets/134983247/ca779e5c-8aae-4c40-878c-4a82a29245d5)
 
 ## Technologies Used
 This website is built using the following technologies:
